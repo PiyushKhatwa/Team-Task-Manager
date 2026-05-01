@@ -27,6 +27,10 @@ app.get('/api/health', (req, res) => {
   res.json({ status: 'OK', message: 'Team Task Manager API is running' });
 });
 
+app.get("/", (req, res) => {
+  res.send("Team Task Manager API is running 🚀");
+});
+
 // Error handler (must be last middleware)
 app.use(errorHandler);
 
