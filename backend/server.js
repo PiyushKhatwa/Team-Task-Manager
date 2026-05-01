@@ -32,9 +32,7 @@ app.get('/api/health', (req, res) => {
 
 // Error handler (must be last middleware)
 app.use(errorHandler);
-app.use(cors({
-  origin: "*"
-}));
+
 const PORT = process.env.PORT || 5000;
 
 app.listen(PORT, () => {
